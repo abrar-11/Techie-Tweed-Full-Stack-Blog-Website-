@@ -2,8 +2,8 @@ import React from "react";
 
 const Hero = () => {
    return (
-      <div className="w-full  bg_hero ">
-         <div className="container mx-auto py-20 px-10">
+      <div className="w-full flex items-center   bg_hero ">
+         <div className="container mx-auto py-32 px-10">
             <div className="flex ">
                <div className="space-y-6">
                   <h1 className="text-white text-5xl">Toptal Blog</h1>
