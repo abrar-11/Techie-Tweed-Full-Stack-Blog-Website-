@@ -1,7 +1,13 @@
 import React from "react";
+import { Categories, Hero } from "../components";
 
 const Home = () => {
-   return <h1 className="text-3xl text-emerald-400 p-10">Home</h1>;
+   return (
+      <>
+         <Hero />
+         <Categories/>
+      </>
+   );
 };
 
 export default Home;
