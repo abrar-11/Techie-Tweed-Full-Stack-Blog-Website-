@@ -5,7 +5,9 @@ const Home = () => {
    return (
       <>
          <Hero />
-         <Categories/>
+         <div className="container mx-auto py-20 px-10">
+            <Categories />
+         </div>
       </>
    );
 };
