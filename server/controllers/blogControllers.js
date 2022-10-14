@@ -1,7 +1,7 @@
 import db from "../config/db.js";
 
 export const getAllBlogs = (req, res) => {
-   const q = "select * from users";
+   const q = "select * from blogs";
 
    db.query(q, (err, results) => {
       if (err) {
@@ -31,10 +31,10 @@ export const createBlog = (req, res) => {
          return res.status(500).json({ success: false, error: err });
       }
 
-      console.log(results);
+      console.log(results[0]);
       res.status(200).json({
          success: true,
-         data: results[0],
+        
       });
    });
 };
