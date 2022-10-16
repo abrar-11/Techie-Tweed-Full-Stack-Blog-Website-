@@ -52,6 +52,7 @@ export const getBlog = (req, res) => {
       });
    });
 }
+// Delete Blog
 export const deleteBlog = (req, res) => {
     const q = "DELETE FROM posts WHERE `id` = ? AND `uid` = ?";
 
